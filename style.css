@@ -1,0 +1,74 @@
+.body{
+    margin: 0px;
+    background-color:rgb(255, 255, 255);
+}
+
+.hander{
+    height: 46px;
+    width: 842px;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 25px;
+    margin-top: 10px;
+}
+
+#h1{
+    margin: 0;
+}
+
+.bing-bar{
+    height: 50px;
+    width: 35%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    position: relative;
+}
+
+.bing-bar-input{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 50px 0 15px;
+    border: 1px solid  rgb(230, 230, 230);
+    background-color:  #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.bing-bar-input:hover{
+    background-color:#ffffff;
+}
+
+.bing-bar-input:focus{
+    outline: none;
+    border: 1px solid  rgb(230, 230, 230);
+    background-color:#ffffff;
+}
+
+.bing-bar-button-seek{
+    height: 25px;
+}
+
+.bing-bar-seek{
+    height: 45px;
+    width: 45px;
+    right: 5px;
+    position: absolute;
+    border-radius: 15px;
+    border: none;
+    background-color: #efefef;
+    transition: background-color 0.3s ease;
+}
+
+.bing-bar-seek:hover{
+    background-color: #f4f4f4;
+}
