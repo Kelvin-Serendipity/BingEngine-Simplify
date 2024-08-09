@@ -15,9 +15,13 @@ Web学习案例之一
 可以在浏览器中设置成启动时默认启动网页，如下图：
 -
 <img width="1102" alt="截屏2024-08-10 04 10 11" src="https://github.com/user-attachments/assets/c04dfb7b-05cb-474b-b06c-f2b330cb5083">
+
 -
+
 -
+
 -
+
 -
 
 下面是实际演示效果图：
