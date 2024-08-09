@@ -7,3 +7,7 @@ Web学习案例之一
 如果需要对接其他搜索引擎（如：baidu，Google，sougo，等）请留言，或者有好的建议请尽情提出，我将尽快更新，争取早日完善项目，给大家带来更好的体验！
 
 虽为简单项目，但是也令人眼前一亮，希望大家支持，你们的支持就是我最大的动力，且我也会同步上线网站，域名为：www.itdata.bing.top 
+
+<img width="1680" alt="截屏2024-08-10 04 07 14" src="https://github.com/user-attachments/assets/a1e2d5e9-98ea-43f6-b1c0-b98ea7e07f37">
+
+<img width="1105" alt="截屏2024-08-10 04 07 05" src="https://github.com/user-attachments/assets/add71f16-8585-40b0-9639-98563d758472">
