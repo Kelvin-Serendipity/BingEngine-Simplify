@@ -40,17 +40,26 @@
     border: 1px solid  rgb(230, 230, 230);
     background-color:  #f9f9f9;
     border-radius: 15px;
-    box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 30px 40px rgba(126, 126, 126, 0.3);
     transition: background-color 0.3s ease;
 }
 
 .bing-bar-input:hover{
     background-color:#ffffff;
+    border: 1px solid #f3f3f3;
+}
+
+.bing-bar-input:hover + .bing-bar-seek {
+    background-color: #f0f0f0;
+}
+
+.bing-bar-input:focus + .bing-bar-seek {
+        background-color: #f0f0f0;
 }
 
 .bing-bar-input:focus{
     outline: none;
-    border: 1px solid  rgb(230, 230, 230);
+    border: 1px solid  #f3f3f3;
     background-color:#ffffff;
 }
 
@@ -65,10 +74,31 @@
     position: absolute;
     border-radius: 15px;
     border: none;
-    background-color: #efefef;
+    background-color: #e3e3e3;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .bing-bar-seek:hover{
-    background-color: #f4f4f4;
+    background-color: #eaeaea;
+}
+
+.bing-bar-input:focus + .bing-bar-seek:hover {
+    background-color: #f5f5f5;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-text-p {
+    font-size: 12px;
+    color: #999999;
+    cursor: pointer;
 }
