@@ -157,3 +157,42 @@ body{
     width: 12px;
 }
 /* 历史记录下拉框样式 End */
+
+/* 移动端适配 Start*/
+@media (max-width: 768px) {
+    .hander{
+        height: 46px;
+        width: 270px;
+        margin: auto;
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bing-bar{
+        height: 50px;
+        width: 70%;
+        margin: 150px auto 0 auto;
+        display: flex;
+        align-items: center; /* 垂直居中对齐 */
+        position: relative;
+    }
+
+    #history {
+        max-height: 368px;
+        transition: max-height 0.3s ease;
+        width: 70%;
+        overflow-y: auto;
+        background-color: #ffffff;
+        margin: 3px auto 0 auto;
+        border: 1px solid #f3f3f3;
+        border-radius: 0 0 15px 15px;
+        padding: 0;
+        position:relative;
+        display: none;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+    }
+}
+/* 移动端适配 End*/

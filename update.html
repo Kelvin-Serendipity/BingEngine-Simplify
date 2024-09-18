@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,19 @@
       margin: 0px;
     }
 
-    .hander{
-    height: 46px;
-    width: 842px;
-    margin: auto;
-    background-color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .hander {
+      height: 46px;
+      width: 842px;
+      margin: auto;
+      background-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-    .logo{
-        height: 25px;
-        margin-top: 10px;
+    .logo {
+      height: 25px;
+      margin-top: 10px;
     }
 
     .subject-p {
@@ -64,16 +65,37 @@
       margin-top: 8px;
       font-size: 18px;
     }
+
+    @media (max-width: 768px) {
+      .hander {
+        height: 46px;
+        width: 270px;
+        margin: auto;
+        background-color: #eaeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .subject-text {
+      width: 70%;
+      margin: 50px auto 0 auto;
+      border-radius: 10px;
+      background-color: #eaeaea;
+      padding: 20px 20px;
+    }
+  }
   </style>
 </head>
+
 <body>
   <header class="hander">
     <div class="logo-containe">
-        <h1 id="h1">
-            <a href="./index.html">
-                <img src="./image/bing.png" alt="" class="logo">
-            </a>
-        </h1>
+      <h1 id="h1">
+        <a href="./index.html">
+          <img src="./image/bing.png" alt="" class="logo">
+        </a>
+      </h1>
     </div>
   </header>
   <div class="subject-p">
@@ -88,39 +110,40 @@
     </ul>
   </div> -->
   <script>
-      fetch('./update.json')
-    .then(response => response.json())
-    .then(updateArr => {
-      for (let i = 0; i < updateArr.length; i++) {
-        const updateItem = updateArr[(updateArr.length - i ) - 1 ]
-        const div = document.createElement('div')
-        div.classList.add('subject-text')
+    fetch('./update.json')
+      .then(response => response.json())
+      .then(updateArr => {
+        for (let i = 0; i < updateArr.length; i++) {
+          const updateItem = updateArr[(updateArr.length - i) - 1]
+          const div = document.createElement('div')
+          div.classList.add('subject-text')
 
-        const versionHeader = document.createElement('h2')
-        versionHeader.classList.add('s-t-b')
-        versionHeader.innerText = updateItem.version
-        div.appendChild(versionHeader)
+          const versionHeader = document.createElement('h2')
+          versionHeader.classList.add('s-t-b')
+          versionHeader.innerText = updateItem.version
+          div.appendChild(versionHeader)
 
-        const dateParagraph = document.createElement('p')
-        dateParagraph.classList.add('s-t-p')
-        dateParagraph.innerHTML = updateItem.Date
-        div.appendChild(dateParagraph)
+          const dateParagraph = document.createElement('p')
+          dateParagraph.classList.add('s-t-p')
+          dateParagraph.innerHTML = updateItem.Date
+          div.appendChild(dateParagraph)
 
-        const ul = document.createElement('ul')
-        ul.classList.add('s-t-ul')
+          const ul = document.createElement('ul')
+          ul.classList.add('s-t-ul')
 
-        for (let key in updateItem) {
-          if (key.startsWith('update')) {
-            const li = document.createElement('li')
-            li.classList.add('s-t-u-li') 
-            li.innerHTML = updateItem[key]
-            ul.appendChild(li)
+          for (let key in updateItem) {
+            if (key.startsWith('update')) {
+              const li = document.createElement('li')
+              li.classList.add('s-t-u-li')
+              li.innerHTML = updateItem[key]
+              ul.appendChild(li)
+            }
           }
+          div.appendChild(ul)
+          document.body.appendChild(div)
         }
-        div.appendChild(ul)
-        document.body.appendChild(div)
-      }
-    })
+      })
   </script>
 </body>
+
 </html>
