@@ -1,0 +1,92 @@
+[
+  {
+    "version": "v1.0.0",
+    "Date": "更新日期：2024-05-20",
+    "update1": "BingEngine-Simplify 网站正式上线"
+  },
+  {
+    "version": "v1.0.1",
+    "Date": "更新日期：2024-05-30",
+    "update1": "修复一些错误",
+    "update2": "完善UI界面",
+    "update3": "优化代码逻辑"
+    
+  },
+  {
+    "version": "v1.0.2",
+    "Date": "更新日期：2024-06-10",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面"
+  },
+  {
+    "version": "v1.0.3",
+    "Date": "更新日期：2024-06-20",
+    "update1": "修复已知Bug"
+  },
+  {
+    "version": "v1.0.4",
+    "Date": "更新日期：2024-06-30",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面"
+  },
+  {
+    "version": "v1.0.5",
+    "Date": "更新日期：2024-07-10",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面",
+    "update3": "优化代码逻辑"
+  },
+  {
+    "version": "v1.1.1",
+    "Date": "更新日期：2024-07-20",
+    "update1": "修复已知Bug"
+  },
+  {
+    "version": "v1.1.2",
+    "Date": "更新日期：2024-07-30",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面",
+    "update3": "优化代码逻辑"
+  },
+  {
+    "version": "v1.1.3",
+    "Date": "更新日期：2024-08-10",
+    "update1": "修复已知Bug",
+    "update3": "优化代码逻辑"
+  },
+  {
+    "version": "v1.1.4",
+    "Date": "更新日期：2024-08-20",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面"
+  },
+  {
+    "version": "v1.1.5",
+    "Date": "更新日期：2024-08-30",
+    "update1": "修复已知Bug",
+    "update2": "完善UI界面",
+    "update3": "优化代码逻辑"
+  },
+  {
+    "version": "v1.1.6",
+    "Date": "更新日期：2024-09-10",
+    "update1": "修复已知Bug"
+  },
+  {
+    "version": "v1.2.0",
+    "Date": "更新日期：2024-09-17",
+    "update1": "更新BingEngine-Simplify的历史记录下拉框",
+    "update2": "UI界面优化",
+    "update3": "修复已知Bug",
+    "update4": "优化代码逻辑",
+    "update5": "简化网站风格",
+    "update6": "更改网站背景色"
+  },
+  {
+    "version": "v1.2.1",
+    "Date": "更新日期：2024-09-18",
+    "update1": "修复已知Bug",
+    "update2": "UI界面进一步优化",
+    "update3": "增加历史记录下拉框的历史记录删除按钮"
+  }
+]

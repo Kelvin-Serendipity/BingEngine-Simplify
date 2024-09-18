@@ -1,13 +1,13 @@
-.body{
+body{
     margin: 0px;
-    background-color:rgb(255, 255, 255);
+    background-color:#f5f5f5;
 }
 
 .hander{
     height: 46px;
     width: 842px;
     margin: auto;
-    background-color: rgb(245, 245, 245);
+    background-color: #eaeaea;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,14 +25,14 @@
 .bing-bar{
     height: 50px;
     width: 35%;
-    margin: 100px auto 0 auto;
+    margin: 150px auto 0 auto;
     display: flex;
     align-items: center; /* 垂直居中对齐 */
     position: relative;
 }
 
 .bing-bar-input{
-    height: 50px;
+    height: 55px;
     width: 100%;
     font-size: 15px;
     font-weight: 400;
@@ -41,7 +41,7 @@
     background-color:  #f9f9f9;
     border-radius: 15px;
     box-shadow: 20px 30px 40px rgba(126, 126, 126, 0.3);
-    transition: background-color 0.3s ease;
+
 }
 
 .bing-bar-input:hover{
@@ -54,7 +54,7 @@
 }
 
 .bing-bar-input:focus + .bing-bar-seek {
-        background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .bing-bar-input:focus{
@@ -64,15 +64,16 @@
 }
 
 .bing-bar-button-seek{
+    margin: 2px 1px 0 0;
     height: 25px;
 }
 
 .bing-bar-seek{
     height: 45px;
     width: 45px;
-    right: 5px;
+    right: 7px;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 12px;
     border: none;
     background-color: #e3e3e3;
     transition: background-color 0.3s ease;
@@ -101,4 +102,58 @@
     font-size: 12px;
     color: #999999;
     cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
+
+/* 历史记录下拉框样式 Start */
+#history {
+    max-height: 368px;
+    transition: max-height 0.3s ease;
+    width: 35%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    margin: 3px auto 0 auto;
+    border: 1px solid #f3f3f3;
+    border-radius: 0 0 15px 15px;
+    padding: 0;
+    position:relative;
+    display: none;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.history-item {
+    height: 30px;
+    padding: 8px 0px 8px 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.history-item:hover {
+    background-color: #e7e7e7;
+}
+
+.writtenWords {
+    font-size: 15px;
+    display: none;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.delete-icon {
+    height: 12px;
+    width: 12px;
+}
+/* 历史记录下拉框样式 End */

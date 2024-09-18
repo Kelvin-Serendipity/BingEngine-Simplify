@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bing.com</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="./image/bing-logo.png" type="image/x-icon">
-    <script src="/xxx.js"></script>
 </head>
-<body class="body">
+
+<body">
     <header class="hander">
         <div class="logo-containe">
             <h1 id="h1">
@@ -18,16 +19,28 @@
             </h1>
         </div>
     </header>
-    <form id="bing-search-form" action="https://cn.bing.com/search" method="get">
-        <div class="bing-bar">
-            <input type="text" name="q" class="bing-bar-input">
-            <button class="bing-bar-seek">
-            <img class="bing-bar-button-seek" src="./image/Seek.png" alt="">
-            </button>
+    <form id="bing-search-form" action="https://cn.bing.com/search" method="get" autocomplete="on">
+        <div class="barANDhistory">
+            <div class="bing-bar">
+                <input type="text" name="q" class="bing-bar-input">
+                <button class="bing-bar-seek">
+                    <img class="bing-bar-button-seek" src="./image/Seek.png" alt="">
+                </button>
+            </div>
+            <div id="history">
+                <div class="history-item">
+                    <span class="writtenWords"></span>
+                    <div class="delete">
+                        <img class="delete-icon" src="./image/delete.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
-        <div class="bottom-text">
-            <p class="bottom-text-p">www.bing.itdata.top</p>
-        </div>  
-</body>
+    <div class="bottom-text">
+        <a class="bottom-text-p" href="./update.html">www.bing.itdata.top</a>
+    </div>
+    <script src="/script.js"></script>
+    </body>
+
 </html>
