@@ -1,94 +1,95 @@
-body{
+body {
     margin: 0px;
-    background-color:#f5f5f5;
+    background-color: #ffffff;
 }
 
-.hander{
+.hander {
     height: 46px;
     width: 842px;
     margin: auto;
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo{
+.logo {
     height: 25px;
     margin-top: 10px;
 }
 
-#h1{
+#h1 {
     margin: 0;
 }
 
-.bing-bar{
+.bing-bar {
     height: 50px;
-    width: 35%;
+    max-width: 680px;
     margin: 150px auto 0 auto;
     display: flex;
-    align-items: center; /* 垂直居中对齐 */
+    align-items: center;
+    /* 垂直居中对齐 */
     position: relative;
 }
 
-.bing-bar-input{
+.bing-bar-input {
     height: 55px;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
+    color: #2d2d2d;
     font-weight: 400;
     padding: 0px 50px 0 15px;
-    border: 1px solid  rgb(230, 230, 230);
-    background-color:  #f9f9f9;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 20px 30px 40px rgba(126, 126, 126, 0.3);
-
 }
 
-.bing-bar-input:hover{
-    background-color:#ffffff;
+.bing-bar-input:hover {
+    background-color: #f8f8f85c;
+    border: 1px solid #f3f3f3;
+    transition: all 0.3s ease;
+}
+
+.bing-bar-input:hover+.bing-bar-seek {
+    background-color: #f0f0f0;
+}
+
+.bing-bar-input:focus+.bing-bar-seek {
+    background-color: #f5f5f5;
+}
+
+.bing-bar-input:focus {
+    outline: none;
+    background-color: #f8f8f85c;
     border: 1px solid #f3f3f3;
 }
 
-.bing-bar-input:hover + .bing-bar-seek {
-    background-color: #f0f0f0;
-}
-
-.bing-bar-input:focus + .bing-bar-seek {
-    background-color: #f0f0f0;
-}
-
-.bing-bar-input:focus{
-    outline: none;
-    border: 1px solid  #f3f3f3;
-    background-color:#ffffff;
-}
-
-.bing-bar-button-seek{
+.bing-bar-button-seek {
     margin: 2px 1px 0 0;
     height: 25px;
 }
 
-.bing-bar-seek{
+.bing-bar-seek {
     height: 45px;
     width: 45px;
     right: 7px;
     position: absolute;
     border-radius: 12px;
     border: none;
-    background-color: #e3e3e3;
+    background-color: #f1f1f1;
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
-.bing-bar-seek:hover{
-    background-color: #eaeaea;
+.bing-bar-seek:hover {
+    background-color: #e6e6e6;
 }
 
-.bing-bar-input:focus + .bing-bar-seek:hover {
-    background-color: #f5f5f5;
+.bing-bar-input:focus+.bing-bar-seek:hover {
+    background-color: #e6e6e6;
 }
 
-.bottom-text{
+.bottom-text {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -110,14 +111,14 @@ body{
 #history {
     max-height: 368px;
     transition: max-height 0.3s ease;
-    width: 35%;
+    max-width: 680px;
     overflow-y: auto;
     background-color: #ffffff;
     margin: 3px auto 0 auto;
     border: 1px solid #f3f3f3;
     border-radius: 0 0 15px 15px;
     padding: 0;
-    position:relative;
+    position: relative;
     display: none;
     transition: transform 0.3s ease;
     box-sizing: border-box;
@@ -130,7 +131,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #f8f8f85c;
 }
 
 .history-item:hover {
@@ -156,11 +157,12 @@ body{
     height: 12px;
     width: 12px;
 }
+
 /* 历史记录下拉框样式 End */
 
 /* 移动端适配 Start*/
 @media (max-width: 768px) {
-    .hander{
+    .hander {
         height: 46px;
         width: 270px;
         margin: auto;
@@ -170,12 +172,13 @@ body{
         justify-content: center;
     }
 
-    .bing-bar{
+    .bing-bar {
         height: 50px;
         width: 70%;
         margin: 150px auto 0 auto;
         display: flex;
-        align-items: center; /* 垂直居中对齐 */
+        align-items: center;
+        /* 垂直居中对齐 */
         position: relative;
     }
 
@@ -189,10 +192,11 @@ body{
         border: 1px solid #f3f3f3;
         border-radius: 0 0 15px 15px;
         padding: 0;
-        position:relative;
+        position: relative;
         display: none;
         transition: transform 0.3s ease;
         box-sizing: border-box;
     }
 }
+
 /* 移动端适配 End*/
